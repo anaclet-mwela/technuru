@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 html,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins, sans-serif;
+    color: #333;
+    font-weight: 300;
 }
 
 a {
@@ -13,4 +20,55 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.hero{
+  background-image: linear-gradient(to right, #333, transparent), url(../src/background.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.section-heading{
+  text-align: uppercase;
+  text-align: center;
+  color: #333;
+}
+
+/* Service section */
+.services{
+  background-color: rgba(173, 166, 166, 0.486);
+  padding: 50px 0;
+}
+
+.service-box:hover .icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 30px;
+  left: calc(50% - 40px);
+  font-size: 3rem;
+  color: #fff;
+  background-color: transparent;
+}
+.service-box:hover .content-box{
+  transform: scale(1);
+  opacity: 1;
+}
+.service-box:hover .icon h3{
+  display: none;
+}
+
+.formation{
+  background-image: linear-gradient(90deg, rgb(15, 57, 92), #3e5766);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+}
+
+.image-box{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-image: url(../src/office.jpg);
+  background-size: cover;
+  background-position: center center;
 }
